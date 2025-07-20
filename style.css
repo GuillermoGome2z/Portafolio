@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #1f2937;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #2563eb;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: #93c5fd;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #374151;
+}
+
+.proyecto {
+    background: #1e3a8a;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.proyecto a {
+    color: #facc15;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    background: #1f2937;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #374151;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
